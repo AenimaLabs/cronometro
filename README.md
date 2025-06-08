@@ -42,18 +42,20 @@ Una aplicación web simple, limpia y funcional para gestionar temporizadores con
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📂 Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
 
 cronometro/
 ├── assets/
-│ ├── sounds/
-│ │ └── notification.mp3
-│ └── images/
-│ └── screenshot.png
+│   ├── sounds/
+│   │   └── notification.mp3
+│   └── images/
+│       └── screenshot.png
 ├── css/
-│ └── styles.css
+│   └── styles.css
 ├── js/
-│ └── script.js
+│   └── script.js
 ├── index.html
 └── README.md
 

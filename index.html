@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"  crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Cronómetro</h1>
+
+    <!-- Timer Display -->
+    <div class="timer-container">
+      <div id="timer-display">00:05:00</div>
+    </div>
+
+    <!-- Time Configuration -->
+    <div class="time-config">
+      
+      <label for="hours">Horas</label>
+      <input type="number" id="hours" value="0" min="0">
+
+      <label for="minutes">Minutos</label>
+      <input type="number" id="minutes" value="5" min="0">
+
+      <label for="seconds">Segundos</label>
+      <input type="number" id="seconds" value="0" min="0">
+
+      <button id="set-time">Configurar Tiempo</button>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="start-pause"><i class="fas fa-play"></i> Iniciar/Pausar</button>
+      <button id="reset"><i class="fas fa-redo"></i> Reiniciar</button>
+    </div>
+
+    <!-- Keyboard Shortcuts -->
+    <div class="keyboard-shortcuts">
+      <h3>Atajos de Teclado</h3>
+      <ul>
+        <li><strong>Espacio:</strong> Iniciar/Pausar</li>
+        <li><strong>R:</strong> Reiniciar</li>
+        <li><strong>M:</strong> Modo Oscuro</li>
+        <li><strong>Esc:</strong> Detener</li>
+      </ul>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <h3>Tema</h3>
+      <button id="toggle-theme"><i class="fas fa-moon"></i> Modo Oscuro</button>
+    </div>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

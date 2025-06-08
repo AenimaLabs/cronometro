@@ -1,0 +1,144 @@
+/* Variables de colores */
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --accent-color: #3498db;
+  --button-bg: #3498db;
+  --button-hover: #2980b9;
+  --card-bg: #fff;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --accent-color: #2ecc71;
+  --button-bg: #2ecc71;
+  --button-hover: #27ae60;
+  --card-bg: #2d2d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  transition: background-color 0.3s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+#timer-display {
+  font-size: 48px;
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.time-config {
+  margin-top: 20px;
+}
+
+.time-config label {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.time-config input {
+  width: 50px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.time-config button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: white;
+  font-size: 14px;
+}
+
+.keyboard-shortcuts {
+  margin-top: 20px;
+}
+
+.keyboard-shortcuts h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.keyboard-shortcuts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.keyboard-shortcuts li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.theme-toggle button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: white;
+  font-size: 14px;
+}
+
